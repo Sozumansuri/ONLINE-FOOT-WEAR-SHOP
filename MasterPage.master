@@ -1,0 +1,581 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+                    
+  
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+
+       	  .main
+    {
+       
+    	height :300px;
+    	width :400px;
+    	border:double 5px black;
+    	overflow:hidden;
+       
+           
+   }
+    figure
+   {
+   	height :300px;
+   	width :400%;
+    position:relative ;
+    margin :0px;
+    left :0px;
+    animation:ss 10s infinite;
+     }
+    
+   
+    
+    @keyframes ss
+    {
+         0%{left:0%;}
+         11%{left:0%;}
+         22%{left:-100%;}
+         33%{left:-100%;}
+         44%{left:-200%;}
+         55%{left:-200%;}
+         66%{left:-300%;}
+         77%{left:-300%;}
+         88%{left:-400%;}
+         100%{left:-400%;}
+     }
+    
+       	  .main1
+    {
+       
+    	height :130px;
+    	width :950px;
+    	border:double 5px black;
+    	overflow:hidden;
+       
+           
+   }
+    figure
+   {
+   	height :130px;
+   	width :950%;
+    position:relative ;
+    margin :0px;
+    left :0px;
+    
+    animation:ss 10s infinite;
+    
+    }
+    
+    @keyframes ss
+    {
+         0%{left:0%;}
+         11%{left:0%;}
+         22%{left:-100%;}
+         33%{left:-100%;}
+         44%{left:-200%;}
+         55%{left:-200%;}
+         66%{left:-300%;}
+         77%{left:-300%;}
+         88%{left:-400%;}
+         100%{left:-400%;}
+     
+    
+    }
+     
+      .a
+      {
+      	height :300px;
+      	width :300px;
+      	overflow :hidden ;
+      	transition: all 5s ease;
+      }
+      .a #img1
+      {
+      	height :300px;
+      	width :300px;
+      	transition:all 5s ease;
+      }
+      .a:hover #img1
+      {
+      	transform:rotateY(360deg);
+      }
+      .b
+      {
+      	height :300px;
+      	width :300px;
+      	overflow :hidden ;
+      	transition: all 5s ease;
+      }
+      .b #img2
+      {
+      	height :300px;
+      	width :300px;
+      	transition:all 5s ease;
+      }
+      .b:hover #img2
+      {
+      	transform:rotateX(360deg);
+      }
+      
+   .c
+      {
+      	height :300px;
+      	width :300px;
+      	overflow :hidden ;
+      	transition: all 5s ease;
+      }
+      .c #img3
+      {
+      	height :300px;
+      	width :300px;
+      	transition:all 5s ease;
+      }
+      .c:hover #img3
+      {
+      	transform:rotateY(360deg);
+      }
+    .d
+      {
+      	height :300px;
+      	width :300px;
+      	overflow :hidden ;
+      	transition: all 5s ease;
+      }
+      .d #img4
+      {
+      	height :300px;
+      	width :300px;
+      	transition:all 5s ease;
+      }
+      .d:hover #img4
+      {
+      	transform:rotateX(360deg);
+      }
+      .e
+      {
+      	height :300px;
+      	width :300px;
+      	overflow :hidden ;
+      	transition: all 5s ease;
+      }
+      .e #img5
+      {
+      	height :300px;
+      	width :300px;
+      	transition:all 5s ease;
+      }
+      .e:hover #img5
+      {
+      	transform:rotateY(360deg);
+      }
+      .f
+      {
+      	height :300px;
+      	width :300px;
+      	overflow :hidden ;
+      	transition: all 5s ease;
+      }
+      .f #img6
+      {
+      	height :300px;
+      	width :300px;
+      	transition:all 5s ease;
+      }
+      .f:hover #img6
+      {
+      	transform:rotateX(360deg);
+      }
+           
+        </style>
+</head>
+<body >
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            <p>
+                &nbsp;
+                <table class="style1">
+                    <tr>
+                        <td>
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder18" runat="server">
+                                <asp:Image ID="Image35" runat="server" Height="130px" 
+                                    ImageUrl="~/Logo/PicsArt_1455794408504-picsay.jpg" Width="170px" />
+                            </asp:ContentPlaceHolder>
+                        </td>
+                        <td>
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder19" runat="server">
+                            <style type ="text/css" >
+                             
+                            
+                            
+                            
+                            
+                                .style1
+                                {
+                                    width: 100%;
+                                }
+                             
+                            
+                            
+                            
+                            
+                            </style>
+                             
+                            </asp:ContentPlaceHolder>
+                            <div class ="main1">
+                            <figure>
+                        
+                   
+                        <img src ="l1.jpg" alt="" height ="130px"  width ="950px"  />
+                         <img src ="l2.jpg" alt="" height ="130px" width ="950px" />
+                         <img src ="l3.jpg" alt="" height ="130px" width ="950px"  />
+                          <img src ="l4.jpg" alt="" height ="130px" width ="950px" />
+                           <img src ="l1.jpg" alt="" height ="130px" width ="950px" />
+                         </figure>
+                        
+                            
+                            </div>
+                        </td>
+                        <td>
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder20" runat="server">
+                                <asp:Image ID="Image37" runat="server" Height="130px" Width="170px" 
+                                    ImageUrl="~/Logo/PicsArt_145579440850h-picsay.jpg" />
+                            </asp:ContentPlaceHolder>
+                        </td>
+                    </tr>
+                </table>
+                </p>
+        
+        </asp:ContentPlaceHolder>
+    </div>
+&nbsp;<asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+        <table class="style1">
+            <tr>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                    &nbsp;</td>
+            </tr>
+        </table>
+    </asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+        
+        <asp:Menu ID="Menu2" runat="server" Orientation="Horizontal">
+            <StaticMenuItemStyle BackColor="Black" Font-Bold="True" 
+                    Font-Names="Times New Roman" Font-Size="Large" ForeColor="White" Height="10px" 
+                    HorizontalPadding="5px" ItemSpacing="1px" VerticalPadding="5px" Width="215px" />
+            <DynamicHoverStyle BackColor="White" Font-Bold="True" 
+                    Font-Names="Times New Roman" Font-Size="Medium" ForeColor="Red" Height="10px" 
+                    Width="215px" />
+            <DynamicMenuItemStyle BackColor="Black" Font-Bold="True" 
+                    Font-Names="Times New Roman" Font-Size="Large" ForeColor="White" Height="10px" 
+                    HorizontalPadding="5px" ItemSpacing="1px" VerticalPadding="5px" Width="215px" />
+            <StaticHoverStyle BackColor="White" Font-Bold="True" 
+                    Font-Names="Times New Roman" Font-Size="Medium" ForeColor="Red" Height="10px" 
+                    Width="215px" />
+            <Items>
+                <asp:MenuItem  Text="HOME" Value="HOME" NavigateUrl ="~/Default.aspx" >
+                </asp:MenuItem>
+                <asp:MenuItem Text="MEN" Value="MEN">
+                    <asp:MenuItem Text="CASUAL SHOES" Value="CASUAL SHOES" NavigateUrl ="~/casual.aspx" >
+                    </asp:MenuItem>
+                    <asp:MenuItem Text="SPORTS SHOES" Value="SPORTS SHOES" NavigateUrl ="~/sports.aspx"  >
+                    </asp:MenuItem>
+                    <asp:MenuItem Text="FORMAL SHOES" Value="FORMAL SHOES" NavigateUrl ="~/formal.aspx" >
+                    </asp:MenuItem>
+                    <asp:MenuItem Text="LOAFERS" Value="LOAFERS" NavigateUrl ="~/loafers.aspx" >
+                    </asp:MenuItem>
+                    <asp:MenuItem Text="SANDALS" Value="SANDALS" NavigateUrl ="~/sandels.aspx" >
+                    </asp:MenuItem>
+                    <asp:MenuItem Text="SLIPPER &amp; FLIP FLOPS" Value="SLIPPER &amp; FLIP" NavigateUrl ="~/slipper.aspx" >
+                    </asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem Text="WOMEN" Value="WOMEN">
+                    <asp:MenuItem Text="FLATS" Value="FLATS" NavigateUrl ="~/flates.aspx" >
+                    </asp:MenuItem>
+                    <asp:MenuItem Text="HEELS" Value="HEELS" NavigateUrl ="~/heels.aspx" >
+                    </asp:MenuItem>
+                    <asp:MenuItem Text="SANDALS" Value="SANDALS" NavigateUrl ="~/sandels1.aspx" >
+                    </asp:MenuItem>
+                    <asp:MenuItem Text="SLIPPER &amp; FLIP FLOPS" Value="SLIPPER &amp; FLIP FLOPS" NavigateUrl ="~/slipper1.aspx" >
+                    </asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem Text="KIDS" Value="KIDS">
+                    <asp:MenuItem Text="BOYS" Value="BOYS">
+                        <asp:MenuItem Text="SLIPPER" Value="SLIPPER" NavigateUrl ="~/casual3.aspx" >
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="SPORTS SHOES" Value="SPORTS SHOES" NavigateUrl ="~/sports3.aspx" >
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="SCHOOL SHOES" Value="SCHOOL SHOES" NavigateUrl ="~/school3.aspx" >
+                        </asp:MenuItem>
+                    </asp:MenuItem>
+                    <asp:MenuItem Text="GIRLS" Value="GIRLS">
+                        <asp:MenuItem Text="SANDALS" Value="SANDALS" NavigateUrl ="~/sandels4.aspx" ></asp:MenuItem>
+                    </asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem Text="CONTACT US" Value="CONTACT US" NavigateUrl ="~/contact us.aspx" ></asp:MenuItem>
+                <asp:MenuItem Text="ABOUT US" Value="ABOUT US" NavigateUrl ="~/about us.aspx" ></asp:MenuItem>
+                <asp:MenuItem Text="LOGIN" Value="LOGIN" NavigateUrl="~/login.aspx"   >
+                </asp:MenuItem>
+                
+            </Items>
+        </asp:Menu>
+        
+    </asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder4" runat="server">
+        
+        <asp:Image ID="Image41" runat="server" Height="300px" 
+            ImageUrl="~/styleimage/3.jpg" Width="100%" />
+        
+    </asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder5" runat="server">
+   
+    
+   
+        
+   
+    
+   
+        <table class="style1">
+            <tr>
+                <td>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder21" runat="server">
+                         
+                   
+                        <img src ="h1.jpg" alt="" height ="300px"  width ="400px"  /></asp:ContentPlaceHolder>
+                </td>
+                <td>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder22" runat="server">
+                       
+                        <div class ="main">
+                         <figure>
+                        
+                   
+                        <img src ="h2.jpg" alt="" height ="300px"  width ="400px"  />
+                         <img src ="h4.jpg" alt="" height ="300px"  width ="400px" />
+                         <img src ="h5.jpg" alt="" height ="300px"  width ="400px"   />
+                          <img src ="h6.jpg" alt="" height ="300px"  width ="400px"  />
+                           <img src ="h2.jpg" alt="" height ="300px" width ="400px" />
+                        
+                         </figure>
+                          
+                        
+                        </div>
+                       
+                </asp:ContentPlaceHolder>
+                </td>
+                <td>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder23" runat="server">
+                        <div class ="main4">
+                       
+                       <img src="k6.jpg" alt ="" height ="300px" width ="500px" />
+                       
+                        
+                        </div>
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+        </table>
+   
+    
+   
+        
+   
+    
+   
+    </asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder6" runat="server">
+        
+        
+        
+    </asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder7" runat="server">
+        
+        
+        
+        <asp:Image ID="Image42" runat="server" Height="300px" 
+            ImageUrl="~/styleimage/h2.jpg" Width="100%" />
+        
+        
+        
+    </asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder8" runat="server">
+        <asp:Image ID="Image43" runat="server" Height="300px" 
+            ImageUrl="~/styleimage/1.jpg" Width="100%" />
+    </asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder9" runat="server">
+        <asp:Image ID="Image44" runat="server" Height="350px" 
+            ImageUrl="~/styleimage/1h.jpg" Width="100%" />
+    </asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder10" runat="server">
+        <table class="style1">
+            <tr>
+                <td>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder15" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+                <td>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder16" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+                <td>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder17" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+        </table>
+    </asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder11" runat="server">
+        <table class="style1">
+            <tr>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    <asp:Panel ID="Panel1" runat="server" BorderColor="Black" BorderStyle="Groove" 
+                        Height="1px" Width="300px">
+                    </asp:Panel>
+                </td>
+                <td style="font-weight: 700; font-size: x-large">
+                    <span lang="en-us" style="font-family: 'Arial Rounded MT Bold'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; STYLE </span></td>
+                <td>
+                    <asp:Panel ID="Panel2" runat="server" BorderColor="Black" BorderStyle="Groove" 
+                        Height="1px" Width="300px">
+                    </asp:Panel>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;</td>
+                <td>
+                  <div class ="a">
+               
+                    <img id="img1" src ="styleimage/c1.jpg" alt ="" />
+                    
+                       </div>
+                    
+                   
+                    &nbsp;</td>
+                <td>
+                <div class ="b">
+              
+                    <img id="img2" src ="styleimage/c2.jpg" alt ="" />
+                       </div>
+                </td>
+                <td>
+                <div class ="c">
+                
+                    <img id="img3" src ="styleimage/c3.jpg" alt ="" />
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;</td>
+                <td>
+                <div class ="d">
+                
+                    <img id="img4" src ="styleimage/c4.jpg" alt ="" />
+                   </div>
+                </td>
+                <td>
+                <div class ="e">
+                
+                     <img id="img5" src ="styleimage/c5.jpg" alt ="" />
+                  </div>
+                </td>
+                <td>
+                    <div class ="f">
+                    
+                     <img id="img6" src ="styleimage/c6.jpg" alt ="" />
+                  </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+        </table>
+    </asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder12" runat="server">
+    </asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder13" runat="server">
+    </asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder14" runat="server">
+    </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>
